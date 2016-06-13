@@ -1,0 +1,6 @@
+## Q&A ##
+
+Q: When would you want to create a remote repository rather than keeping all your work local?
+
+  * Remote repository enables you to collaborate with other developers.
+  * You may want to use a remote repository when you are away from your local computer.
