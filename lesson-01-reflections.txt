@@ -1,0 +1,41 @@
+## Q&A ##
+
+Q: How did viewing a difference between two versions of a file help you see the bug that was introduced?
+
+  It shows only the lines where changes occur, therefore you don't need to search through all lines.
+
+Q: How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+  Learning from past mistakes / bugs helps minimizing them in future.
+
+Q: What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+  Manual commits allow to save work when logical parts of the work are completed. Additionally commit messages can be added.
+
+Q: Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+  In programming it is typically desirable to save multiple files at the same time as they are interdependent in content and file structure. Whereas general documents are typically standalone pieces of work.
+
+Q: How can you use the commands git log and git diff to view the history of files?
+
+  By typing them in the command line. First "git log" to see all the commits, second "git diff" to see the differences between two commits.
+
+Q: How might using version control make you more confident to make changes that could break something?
+
+  By testing previous commits you can see where bug wasn't present.
+
+Q: Now that you have your workspace set up, what do you want to try using Git for?
+
+  Contribute to open source projects and develop new ideas.
+
+----------
+
+## Commands ##
+
+q  |    exit git log
+git log  |    List the commits and show which files have changed
+git log --stat  |    Show additional information about the commits
+git diff id1 id2  |    Compare two commits
+git clone  |    Create a local copy/clone of the repository
+git config --global color.ui auto |    get colored diff output
+git checkout  |    Shows a previous version of the file.
