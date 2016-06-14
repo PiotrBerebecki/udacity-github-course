@@ -1,43 +1,79 @@
 ## Q&A ##
 
-Q: When would you want to create a remote repository rather than keeping all your work local?
+Q: When would you want to create a remote repository rather than keeping all
+your work local?
 
-  * When collaborating with other users it's easier to share updates by using a remote repository. This way others can contribute, and get changes too.
-  * You may want to use a remote repository when you are away from your local computer.
+  When collaborating with other users it's easier to share updates by using a
+  remote repository. This way others can contribute, and get changes too. You
+  may want to use a remote repository when you are away from your local
+  computer.
 
-Q: Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+Q: Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
 
-  Changes can cause conflicts. If you are in the process of creating a new feature, you don't want to solve those conflicts but finish your feature first.
-  This way you can focus on your task and later get the latest versions and integrate changes.
+  Changes can cause conflicts. If you are in the process of creating a new
+  feature, you don't want to solve those conflicts but finish your feature
+  first. This way you can focus on your task and later get the latest versions
+  and integrate changes.
     
-Q: Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Q: Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
 
-  A fork is a copy of a repository on GitHub. Use this when you want to make changes to a repository when you don't have access to the original repository.
-  A clone is copy of a repository. This can be on the same machine, but it can also be a clone from a GitHub repository to your own machine. Use this for collaborating.
-  Branches are leafs on the master branch. Those can be seen as a side track in which you can change code without changing the master branch. Use this for creating new features, experimenting, bug fixes.
+  A fork is a copy of a repository on GitHub. Use this when you want to make
+  changes to a repository when you don't have access to the original repository.
+  A clone is copy of a repository. This can be on the same machine, but it can
+  also be a clone from a GitHub repository to your own machine. Use this for
+  collaborating. Branches are leafs on the master branch. Those can be seen as a
+  side track in which you can change code without changing the master branch.
+  Use this for creating new features, experimenting, bug fixes.
 
-Q: What is the benefit of having a copy of the last known state of the remote stored locally?
+Q: What is the benefit of having a copy of the last known state of the remote
+stored locally?
 
-  Before pushing your local commit (e.g. bugfix or new feature), you can refactor your code so that it works as desired with the last known state of the remote repo rather than with the outdated local copy of the remote repo.
+  Before pushing your local commit (e.g. bugfix or new feature), you can
+  refactor your code so that it works as desired with the last known state of
+  the remote repo rather than with the outdated local copy of the remote repo.
 
-Q: How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Q: How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
 
-  Without Git or GitHub you may have to send files via email/networkshare/dropbox etc. This will get work done eventually but you are not getting the the history of changes. It is also hard to combine the work of multiple developers.
-  The thing that is harder with Git/ GitHub is that if you work with developers not familiar with these systems, the onboarding may be more time-consuming comparing with email for example.
+  Without Git or GitHub you may have to send files via
+  email/networkshare/dropbox etc. This will get work done eventually but you are
+  not getting the the history of changes. It is also hard to combine the work of
+  multiple developers. The thing that is harder with Git/ GitHub is that if you
+  work with developers not familiar with these systems, the onboarding may be
+  more time-consuming comparing with email for example.
 
-Q: When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+Q: When would you want to make changes in a separate branch rather than directly
+in master? What benefits does each approach have?
 
-  You want to make changes in a different branch so that the master branch always stays in a working state. By using a different branch, you can push your changes to GitHub for review by other team members, without directly affecting the functionality of the code in the master branch.
-  For small changes it is a lot quicker to make them directly in the master branch, but this comes with a risk.
+  You want to make changes in a different branch so that the master branch
+  always stays in a working state. By using a different branch, you can push
+  your changes to GitHub for review by other team members, without directly
+  affecting the functionality of the code in the master branch. For small
+  changes it is a lot quicker to make them directly in the master branch, but
+  this comes with a risk.
 
 ----------
 
 ## Commands ##
 
 git remote  |    Show all remote locations for the repository
-git remote add origin url |     Add a new remote location for the repository. Origin is the default name to use when you create only one remote location. Url should be the https url to the github repository.
-git remove -v  |    Outputs the remote locations with verbose information (fetch and push urls)
-git push origin master  |    Push the master branch to the remote location origin
-git pull origin master  |    Get the master branch from the remote location origin
+
+git remote add origin url |     Add a new remote location for the repository.
+Origin is the default name to use when you create only one remote location. Url
+should be the https url to the github repository.
+
+git remove -v  |    Outputs the remote locations with verbose information (fetch
+and push urls)
+
+git push origin master  |    Push the master branch to the remote location
+origin
+
+git pull origin master  |    Get the master branch from the remote location
+origin
+
 git pull origin master  |    Git fetch origin + git merge master origin/master
-git fetch origin  |    Get the changes from the remote location into the (hidden?) origin/master branch
+
+git fetch origin  |    Get the changes from the remote location into the
+origin/master branch
