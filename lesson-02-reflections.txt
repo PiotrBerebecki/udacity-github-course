@@ -1,6 +1,6 @@
 ## Q&A ##
 
-Q: What happens when you initialize a repository? Why do you need to do it?
+Q: What happens when you initialise a repository? Why do you need to do it?
 
   A hidden .git folder is created when the command "git init" is executed. The
   presence of the git repository is needed for recording all the commits in the
@@ -32,7 +32,7 @@ history organized? How would branches help?
   * development | new features
   * experiment | experimental features, may often break
 
-Q: How do the diagrams help you visualize the branch structure?
+Q: How do the diagrams help you visualise the branch structure?
 
   Graphically representing the branch structure of a repository helps to
   identify commits that are reachable and unreachable. The graphical
